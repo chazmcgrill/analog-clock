@@ -1,0 +1,70 @@
+.clock-face {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 3px solid;
+  border-radius: 50%; }
+  .clock-face .mark {
+    position: absolute;
+    left: 100px;
+    height: 15px;
+    width: 3px;
+    background: black;
+    transform-origin: 50% 101.5px;
+    z-index: 2;
+    margin-top: -1px; }
+  .clock-face .mark:nth-child(2) {
+    transform: rotate(30deg); }
+  .clock-face .mark:nth-child(3) {
+    transform: rotate(60deg); }
+  .clock-face .mark:nth-child(4) {
+    transform: rotate(90deg); }
+  .clock-face .mark:nth-child(5) {
+    transform: rotate(120deg); }
+  .clock-face .mark:nth-child(6) {
+    transform: rotate(150deg); }
+  .clock-face .mark:nth-child(7) {
+    transform: rotate(180deg); }
+  .clock-face .mark:nth-child(8) {
+    transform: rotate(210deg); }
+  .clock-face .mark:nth-child(9) {
+    transform: rotate(240deg); }
+  .clock-face .mark:nth-child(10) {
+    transform: rotate(270deg); }
+  .clock-face .mark:nth-child(11) {
+    transform: rotate(300deg); }
+  .clock-face .mark:nth-child(12) {
+    transform: rotate(330deg); }
+  .clock-face .hr-hand {
+    position: absolute;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    left: 98px;
+    top: 27px;
+    height: 75px;
+    width: 6px;
+    background: black; }
+  .clock-face .min-hand {
+    position: absolute;
+    left: 99px;
+    top: 17px;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    height: 85px;
+    width: 4px;
+    background: black; }
+  .clock-face .sec-hand {
+    position: absolute;
+    left: 100px;
+    top: 7px;
+    height: 95px;
+    width: 2px;
+    background: red; }
+  .clock-face .circle {
+    position: absolute;
+    top: 94px;
+    left: 95px;
+    height: 12px;
+    width: 12px;
+    background: black;
+    border-radius: 50%; }

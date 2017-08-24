@@ -11,15 +11,15 @@ html(lang="en")
       
   body
       
-    .clock-face
-      .marks
+    .clock-border
+      .clock-face
+
         - for(var i = 0; i < 12; i++)
           .mark
       	
-      .hr-hand
-      .min-hand
-      .sec-hand
-      .circle
-		  
-    //- script(src="./js/jquery-3.2.1.min.js")
+        .hr-hand.hands
+        .min-hand.hands
+        .sec-hand.hands
+        .circle
+
     script(src="./js/app.js")

@@ -1,28 +1,36 @@
 $dark: #454552
 $mid: #4ea1d3
 $light: #d8e9ef
-$red: #e85a71
+$special: #e85a71
 
 body
-	background: $light
+	background: $mid
 
-.clock-face
+.clock-border
 	margin: 100px auto
 	position: relative
 	width: 200px
 	height: 200px
-	border: 3px solid $dark
+	border: 5px solid $dark
 	border-radius: 50%
+
+	.clock-face
+		position: relative
+		width: 200px
+		height: 200px
+		box-sizing: border-box
+		background: $light
+		border-radius: 50%
 
 	.mark
 		position: absolute
-		left: 100px
-		height: 15px
+		left: 98.5px
+		top: 0
+		height: 10px
 		width: 3px
 		background: $dark
-		transform-origin: 50% 101.5px
+		transform-origin: 50% 101px
 		z-index: 2
-		margin-top: -1px
 
 	.mark:nth-child(2)
 		transform: rotate(30deg)
@@ -47,39 +55,40 @@ body
 	.mark:nth-child(12)
 		transform: rotate(330deg)
 
-	.hr-hand
+	.hands
 		position: absolute
-		border-top-right-radius: 30%
-		border-top-left-radius: 30%
-		left: 98px
-		top: 27px
+		transform-origin: bottom center
+
+	.hr-hand
+		border-top-right-radius: 100%
+		border-top-left-radius: 100%
+		top: 25px
+		left: 97px
 		height: 75px
 		width: 6px
 		background: $dark
 
 	.min-hand
-		position: absolute
-		left: 99px
-		top: 17px
-		border-top-right-radius: 30%
-		border-top-left-radius: 30%
+		top: 15px
+		left: 98px
 		height: 85px
 		width: 4px
+		border-top-right-radius: 50%
+		border-top-left-radius: 50%
 		background: $dark
 
 	.sec-hand
-		position: absolute
-		left: 100px
-		top: 7px
-		height: 95px
+		top: 12px
+		left: 99px
+		height: 88px
 		width: 2px
-		background: $mid
+		background: $special
 
 	.circle
 		position: absolute
-		top: 94px
-		left: 95px
-		height: 12px
-		width: 12px
+		top: 93px
+		left: 93px
+		height: 14px
+		width: 14px
 		background: $dark
 		border-radius: 50%

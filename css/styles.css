@@ -1,74 +1,81 @@
 body {
-  background: #d8e9ef; }
+  background: #4ea1d3; }
 
-.clock-face {
+.clock-border {
   margin: 100px auto;
   position: relative;
   width: 200px;
   height: 200px;
-  border: 3px solid #454552;
+  border: 5px solid #454552;
   border-radius: 50%; }
-  .clock-face .mark {
+  .clock-border .clock-face {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    background: #d8e9ef;
+    border-radius: 50%; }
+  .clock-border .mark {
     position: absolute;
-    left: 100px;
-    height: 15px;
+    left: 98.5px;
+    top: 0;
+    height: 10px;
     width: 3px;
     background: #454552;
-    transform-origin: 50% 101.5px;
-    z-index: 2;
-    margin-top: -1px; }
-  .clock-face .mark:nth-child(2) {
+    transform-origin: 50% 101px;
+    z-index: 2; }
+  .clock-border .mark:nth-child(2) {
     transform: rotate(30deg); }
-  .clock-face .mark:nth-child(3) {
+  .clock-border .mark:nth-child(3) {
     transform: rotate(60deg); }
-  .clock-face .mark:nth-child(4) {
+  .clock-border .mark:nth-child(4) {
     transform: rotate(90deg); }
-  .clock-face .mark:nth-child(5) {
+  .clock-border .mark:nth-child(5) {
     transform: rotate(120deg); }
-  .clock-face .mark:nth-child(6) {
+  .clock-border .mark:nth-child(6) {
     transform: rotate(150deg); }
-  .clock-face .mark:nth-child(7) {
+  .clock-border .mark:nth-child(7) {
     transform: rotate(180deg); }
-  .clock-face .mark:nth-child(8) {
+  .clock-border .mark:nth-child(8) {
     transform: rotate(210deg); }
-  .clock-face .mark:nth-child(9) {
+  .clock-border .mark:nth-child(9) {
     transform: rotate(240deg); }
-  .clock-face .mark:nth-child(10) {
+  .clock-border .mark:nth-child(10) {
     transform: rotate(270deg); }
-  .clock-face .mark:nth-child(11) {
+  .clock-border .mark:nth-child(11) {
     transform: rotate(300deg); }
-  .clock-face .mark:nth-child(12) {
+  .clock-border .mark:nth-child(12) {
     transform: rotate(330deg); }
-  .clock-face .hr-hand {
+  .clock-border .hands {
     position: absolute;
-    border-top-right-radius: 30%;
-    border-top-left-radius: 30%;
-    left: 98px;
-    top: 27px;
+    transform-origin: bottom center; }
+  .clock-border .hr-hand {
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    top: 25px;
+    left: 97px;
     height: 75px;
     width: 6px;
     background: #454552; }
-  .clock-face .min-hand {
-    position: absolute;
-    left: 99px;
-    top: 17px;
-    border-top-right-radius: 30%;
-    border-top-left-radius: 30%;
+  .clock-border .min-hand {
+    top: 15px;
+    left: 98px;
     height: 85px;
     width: 4px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
     background: #454552; }
-  .clock-face .sec-hand {
-    position: absolute;
-    left: 100px;
-    top: 7px;
-    height: 95px;
+  .clock-border .sec-hand {
+    top: 12px;
+    left: 99px;
+    height: 88px;
     width: 2px;
-    background: #4ea1d3; }
-  .clock-face .circle {
+    background: #e85a71; }
+  .clock-border .circle {
     position: absolute;
-    top: 94px;
-    left: 95px;
-    height: 12px;
-    width: 12px;
+    top: 93px;
+    left: 93px;
+    height: 14px;
+    width: 14px;
     background: #454552;
     border-radius: 50%; }

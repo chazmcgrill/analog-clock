@@ -1,15 +1,19 @@
+body {
+  background: #d8e9ef; }
+
 .clock-face {
+  margin: 100px auto;
   position: relative;
   width: 200px;
   height: 200px;
-  border: 3px solid;
+  border: 3px solid #454552;
   border-radius: 50%; }
   .clock-face .mark {
     position: absolute;
     left: 100px;
     height: 15px;
     width: 3px;
-    background: black;
+    background: #454552;
     transform-origin: 50% 101.5px;
     z-index: 2;
     margin-top: -1px; }
@@ -43,7 +47,7 @@
     top: 27px;
     height: 75px;
     width: 6px;
-    background: black; }
+    background: #454552; }
   .clock-face .min-hand {
     position: absolute;
     left: 99px;
@@ -52,19 +56,19 @@
     border-top-left-radius: 30%;
     height: 85px;
     width: 4px;
-    background: black; }
+    background: #454552; }
   .clock-face .sec-hand {
     position: absolute;
     left: 100px;
     top: 7px;
     height: 95px;
     width: 2px;
-    background: red; }
+    background: #4ea1d3; }
   .clock-face .circle {
     position: absolute;
     top: 94px;
     left: 95px;
     height: 12px;
     width: 12px;
-    background: black;
+    background: #454552;
     border-radius: 50%; }

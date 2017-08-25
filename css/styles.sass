@@ -24,40 +24,26 @@ body
 
 	.mark
 		position: absolute
-		left: 98.5px
-		top: 0
-		height: 10px
-		width: 3px
+		left: 99px
+		top: -1px
+		height: 5px
+		width: 1px
 		background: $dark
 		transform-origin: 50% 101px
 		z-index: 2
 
-	.mark:nth-child(2)
-		transform: rotate(30deg)
-	.mark:nth-child(3)
-		transform: rotate(60deg)
-	.mark:nth-child(4)
-		transform: rotate(90deg)
-	.mark:nth-child(5)
-		transform: rotate(120deg)
-	.mark:nth-child(6)
-		transform: rotate(150deg)
-	.mark:nth-child(7)
-		transform: rotate(180deg)
-	.mark:nth-child(8)
-		transform: rotate(210deg)
-	.mark:nth-child(9)
-		transform: rotate(240deg)
-	.mark:nth-child(10)
-		transform: rotate(270deg)
-	.mark:nth-child(11)
-		transform: rotate(300deg)
-	.mark:nth-child(12)
-		transform: rotate(330deg)
+	@for $i from 1 to 60
+		.mark:nth-child(#{$i})
+	    transform: rotate(6deg * $i)
+
+	.mark:nth-child(5n)
+		height: 10px
+		width: 3px
 
 	.hands
 		position: absolute
 		transform-origin: bottom center
+		box-shadow: 1px 0px 1px 2px rgba(0, 0, 0, 0.1)
 
 	.hr-hand
 		border-top-right-radius: 100%

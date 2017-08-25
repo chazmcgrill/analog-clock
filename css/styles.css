@@ -17,38 +17,138 @@ body {
     border-radius: 50%; }
   .clock-border .mark {
     position: absolute;
-    left: 98.5px;
-    top: 0;
-    height: 10px;
-    width: 3px;
+    left: 99px;
+    top: -1px;
+    height: 5px;
+    width: 1px;
     background: #454552;
     transform-origin: 50% 101px;
     z-index: 2; }
+  .clock-border .mark:nth-child(1) {
+    transform: rotate(6deg); }
   .clock-border .mark:nth-child(2) {
-    transform: rotate(30deg); }
+    transform: rotate(12deg); }
   .clock-border .mark:nth-child(3) {
-    transform: rotate(60deg); }
+    transform: rotate(18deg); }
   .clock-border .mark:nth-child(4) {
-    transform: rotate(90deg); }
+    transform: rotate(24deg); }
   .clock-border .mark:nth-child(5) {
-    transform: rotate(120deg); }
+    transform: rotate(30deg); }
   .clock-border .mark:nth-child(6) {
-    transform: rotate(150deg); }
+    transform: rotate(36deg); }
   .clock-border .mark:nth-child(7) {
-    transform: rotate(180deg); }
+    transform: rotate(42deg); }
   .clock-border .mark:nth-child(8) {
-    transform: rotate(210deg); }
+    transform: rotate(48deg); }
   .clock-border .mark:nth-child(9) {
-    transform: rotate(240deg); }
+    transform: rotate(54deg); }
   .clock-border .mark:nth-child(10) {
-    transform: rotate(270deg); }
+    transform: rotate(60deg); }
   .clock-border .mark:nth-child(11) {
-    transform: rotate(300deg); }
+    transform: rotate(66deg); }
   .clock-border .mark:nth-child(12) {
+    transform: rotate(72deg); }
+  .clock-border .mark:nth-child(13) {
+    transform: rotate(78deg); }
+  .clock-border .mark:nth-child(14) {
+    transform: rotate(84deg); }
+  .clock-border .mark:nth-child(15) {
+    transform: rotate(90deg); }
+  .clock-border .mark:nth-child(16) {
+    transform: rotate(96deg); }
+  .clock-border .mark:nth-child(17) {
+    transform: rotate(102deg); }
+  .clock-border .mark:nth-child(18) {
+    transform: rotate(108deg); }
+  .clock-border .mark:nth-child(19) {
+    transform: rotate(114deg); }
+  .clock-border .mark:nth-child(20) {
+    transform: rotate(120deg); }
+  .clock-border .mark:nth-child(21) {
+    transform: rotate(126deg); }
+  .clock-border .mark:nth-child(22) {
+    transform: rotate(132deg); }
+  .clock-border .mark:nth-child(23) {
+    transform: rotate(138deg); }
+  .clock-border .mark:nth-child(24) {
+    transform: rotate(144deg); }
+  .clock-border .mark:nth-child(25) {
+    transform: rotate(150deg); }
+  .clock-border .mark:nth-child(26) {
+    transform: rotate(156deg); }
+  .clock-border .mark:nth-child(27) {
+    transform: rotate(162deg); }
+  .clock-border .mark:nth-child(28) {
+    transform: rotate(168deg); }
+  .clock-border .mark:nth-child(29) {
+    transform: rotate(174deg); }
+  .clock-border .mark:nth-child(30) {
+    transform: rotate(180deg); }
+  .clock-border .mark:nth-child(31) {
+    transform: rotate(186deg); }
+  .clock-border .mark:nth-child(32) {
+    transform: rotate(192deg); }
+  .clock-border .mark:nth-child(33) {
+    transform: rotate(198deg); }
+  .clock-border .mark:nth-child(34) {
+    transform: rotate(204deg); }
+  .clock-border .mark:nth-child(35) {
+    transform: rotate(210deg); }
+  .clock-border .mark:nth-child(36) {
+    transform: rotate(216deg); }
+  .clock-border .mark:nth-child(37) {
+    transform: rotate(222deg); }
+  .clock-border .mark:nth-child(38) {
+    transform: rotate(228deg); }
+  .clock-border .mark:nth-child(39) {
+    transform: rotate(234deg); }
+  .clock-border .mark:nth-child(40) {
+    transform: rotate(240deg); }
+  .clock-border .mark:nth-child(41) {
+    transform: rotate(246deg); }
+  .clock-border .mark:nth-child(42) {
+    transform: rotate(252deg); }
+  .clock-border .mark:nth-child(43) {
+    transform: rotate(258deg); }
+  .clock-border .mark:nth-child(44) {
+    transform: rotate(264deg); }
+  .clock-border .mark:nth-child(45) {
+    transform: rotate(270deg); }
+  .clock-border .mark:nth-child(46) {
+    transform: rotate(276deg); }
+  .clock-border .mark:nth-child(47) {
+    transform: rotate(282deg); }
+  .clock-border .mark:nth-child(48) {
+    transform: rotate(288deg); }
+  .clock-border .mark:nth-child(49) {
+    transform: rotate(294deg); }
+  .clock-border .mark:nth-child(50) {
+    transform: rotate(300deg); }
+  .clock-border .mark:nth-child(51) {
+    transform: rotate(306deg); }
+  .clock-border .mark:nth-child(52) {
+    transform: rotate(312deg); }
+  .clock-border .mark:nth-child(53) {
+    transform: rotate(318deg); }
+  .clock-border .mark:nth-child(54) {
+    transform: rotate(324deg); }
+  .clock-border .mark:nth-child(55) {
     transform: rotate(330deg); }
+  .clock-border .mark:nth-child(56) {
+    transform: rotate(336deg); }
+  .clock-border .mark:nth-child(57) {
+    transform: rotate(342deg); }
+  .clock-border .mark:nth-child(58) {
+    transform: rotate(348deg); }
+  .clock-border .mark:nth-child(59) {
+    transform: rotate(354deg); }
+  .clock-border .mark:nth-child(5n) {
+    height: 10px;
+    width: 3px; }
   .clock-border .hands {
     position: absolute;
-    transform-origin: bottom center; }
+    transform-origin: bottom center;
+    box-shadow: 1px 0px 1px 2px rgba(0, 0, 0, 0.1); }
   .clock-border .hr-hand {
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
